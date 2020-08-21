@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WhatsAppChatActivity">
+
+    <ListView
+        android:id="@+id/list_view_whatsapp_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="105" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text_to_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="90"
+            android:ems="10"
+            android:gravity="bottom"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/send" />
+
+    </LinearLayout>
+
+</LinearLayout>
